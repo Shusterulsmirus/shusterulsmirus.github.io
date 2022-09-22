@@ -1,0 +1,52 @@
+.tools {
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+  
+  .container div > p span {
+    color: red;
+  }
+  
+  .tools p {
+    position: relative;
+    top: 30px;
+  }
+  
+  .tools p a {
+    color: black;
+    text-decoration: none;
+  }
+  
+ .tools button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 100px;
+    padding: 10px 0;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+    transition: 0.4s;
+  }
+  
+ .tools .reg {
+    color: white;
+    background-color: #eb8f39;
+    border: 1px solid orange;
+  }
+  
+ .tools .log {
+    color: #eb8f39;
+    background-color: #ffffff;
+    border: 1px solid #eb8f39;
+  }
+  
+ .tools button:hover {
+    color: white;
+    box-shadow: 0 0 20px rgba(223, 156, 56, 0.6);
+    background-color: rgb(190, 109, 16);
+  }
+  

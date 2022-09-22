@@ -1,0 +1,27 @@
+.feature ul {
+    list-style-type: "*";
+  }
+
+.feature ul li {
+    list-style: none;
+    position: relative;
+    padding: 3px 0 2px 25px;
+  }
+
+.feature ul li a {
+    color: rgb(59, 59, 59);
+    padding-left: 10px;
+    &:hover {
+        color: rgb(115, 124, 124);
+  }
+}
+
+
+.feature ul li a {
+    font-size: 18px;
+}
+
+.feature h3 {
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

@@ -1,0 +1,26 @@
+.hero ul {
+    list-style-type: "*";
+  }
+
+.hero ul li {
+    list-style: none;
+    position: relative;
+    padding: 3px 0 2px 25px;;
+  }
+
+.hero ul li a {
+    color: rgb(59, 59, 59);
+    padding-left: 10px;
+    &:hover {
+        color: rgb(115, 124, 124);
+    }
+  }
+
+.hero ul li a {
+    font-size: 18px;
+}
+
+.hero h3 {
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

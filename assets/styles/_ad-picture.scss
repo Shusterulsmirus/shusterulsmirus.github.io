@@ -1,0 +1,14 @@
+.ad-picture {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    img {
+        height: 150px;
+    }
+}
+
+.ad-picture:hover {
+    -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(2); 
+}

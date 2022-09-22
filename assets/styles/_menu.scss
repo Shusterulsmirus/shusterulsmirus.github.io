@@ -1,0 +1,118 @@
+.navbar {
+    margin: auto;
+ }
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+    justify-content: center;
+  }
+  
+.menu li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    color: #eb8f39;
+  }
+  
+  .menu li a:hover,
+  .menu .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+ .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* menu icon */
+   .menu-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .menu .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .menu .menu-icon .navicon:before,
+  .menu .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .menu .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .menu .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .menu .menu-btn {
+    display: none;
+  }
+  
+  .menu .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .menu .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .menu .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .menu .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 577px) {
+    .menu li {
+      float: left;
+    }
+    .menu li a {
+      padding: 20px 30px;
+    }
+    .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .menu .menu-icon {
+      display: none;
+    }
+  }
+  

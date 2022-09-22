@@ -1,0 +1,33 @@
+@media (max-width: 992px) {
+    .grid-container {
+        display: block;
+        grid-template-areas:
+    "b n t"
+    "f" 
+    "h"
+    "s k"
+    "l"
+    "c"
+    "f";
+    }
+}
+
+.topnav {
+   display: none;
+}
+
+.menu {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribe {
+    margin-left: auto;
+    margin-right: auto;
+}
+

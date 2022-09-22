@@ -1,0 +1,52 @@
+.grid-container {
+    display: grid;
+    grid-gap: 5px;
+  //  grid-template-columns: 200px 200px 200px 200px;
+    grid-template-areas:
+    "b b n n n n n n n t t t"
+    "f f f f f f h h h k k k"
+    "s s s l l l l l l c c c"
+    "z z z z z z z z z z z z";
+    background-color: #fff;
+    color: #444;
+  }
+
+
+.box {
+//  background-color: rgb(240, 229, 229);
+  color: rgb(5, 5, 5);
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+  .brand {
+    grid-area: b;
+  }
+  .navbar {
+    grid-area: n;
+  }
+  .tools {
+    grid-area: t;
+  }
+  .feature {
+    grid-area: f;
+  }
+  .hero {
+    grid-area: h;
+  }
+  .ad-picture {
+    grid-area: k;
+  }
+  .article {
+    grid-area: c;
+  }
+  .listing {
+    grid-area: l;
+  }
+  .sidebar {
+    grid-area: s;
+  }
+  .footer {
+    grid-area: z;
+  }
